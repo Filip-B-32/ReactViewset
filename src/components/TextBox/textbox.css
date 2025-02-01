@@ -1,0 +1,83 @@
+/* General styles for the textbox */
+input {
+  border: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.textbox {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+/* Icon styling */
+.textbox span {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  left: 0;
+  font-size: 22px;
+  pointer-events: none;
+  color: rgb(255 255 255 / 40%);
+}
+
+/* Textbox styling */
+.textbox input {
+  padding: 0 24px 0 36px;
+  border-bottom: 2px solid #2b3442;
+  color: rgb(255 255 255 / 96%);
+  height: 72px;
+  font-size: 1rem; /* Base font size */
+}
+
+/* Focus state for input */
+input:focus {
+  border-color: rgba(255, 255, 255, 0.623);
+}
+
+:is(input:focus, input:valid) ~ span {
+  color: rgb(255 255 255 / 96%);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile - Small screens (max width 480px) */
+@media (max-width: 480px) {
+  .textbox input {
+    font-size: 0.875rem; /* Smaller font size for mobile */
+    height: 50px; /* Smaller input field height */
+  }
+
+  .textbox span {
+    font-size: 18px; /* Smaller icon size */
+  }
+}
+
+/* Tablet (Small to Medium screens - max width 768px) */
+@media (max-width: 768px) {
+  .textbox input {
+    font-size: 1rem; /* Default size for tablets */
+    height: 60px; /* Normal input height */
+  }
+
+  .textbox span {
+    font-size: 20px; /* Slightly smaller icon size for tablets */
+  }
+}
+
+/* Desktop - Larger screens (min width 1024px) */
+@media (min-width: 1024px) {
+  .textbox input {
+    font-size: 1.125rem; /* Larger font size for desktops */
+    height: 72px; /* Larger input height */
+  }
+
+  .textbox span {
+    font-size: 22px; /* Normal icon size */
+  }
+}

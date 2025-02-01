@@ -1,0 +1,30 @@
+{
+  "name": "react-viewset",
+  "version": "1.0.0",
+  "description": "React Viewset: Library with pages and components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Filip-B-32/ReactViewset.git"
+  },
+  "keywords": [
+    "ReactViewset"
+  ],
+  "author": "Bogdan Filip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Filip-B-32/ReactViewset/issues"
+  },
+  "homepage": "https://github.com/Filip-B-32/ReactViewset#readme",
+  "devDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

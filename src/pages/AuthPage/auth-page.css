@@ -1,0 +1,36 @@
+@media screen and (max-width: 460px) {
+  .left-side-wrapper-auth {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-side-wrapper-auth {
+    width: 100%;
+  }
+}
+
+.left-side-wrapper-auth {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 460px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: auto;
+  padding-left: 15px;
+}
+
+.right-side-wrapper-auth {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}

@@ -1,3 +1,3 @@
 # ReactViewset
 
-test
+React.js pages and components to use
